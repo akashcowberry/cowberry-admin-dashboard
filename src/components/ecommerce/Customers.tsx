@@ -1,7 +1,7 @@
-import React from "react";
 
 
-export default function MonthlyTarget() {
+
+export default function Customers() {
  
   return (
       <div className="bg-white rounded-xl shadow-sm p-5 w-full max-w-xs">

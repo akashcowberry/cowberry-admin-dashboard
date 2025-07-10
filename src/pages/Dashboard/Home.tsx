@@ -1,12 +1,14 @@
 import EcommerceMetrics from "../../components/ecommerce/EcommerceMetrics";
 import MonthlySalesChart from "../../components/ecommerce/MonthlySalesChart";
 
-import MonthlyTarget from "../../components/ecommerce/MonthlyTarget";
-import RecentOrders from "../../components/ecommerce/RecentOrders";
-import DemographicCard from "../../components/ecommerce/DemographicCard";
+import EmployeeStatus from "../../components/ecommerce/EmployeeStatus";
+// import DemographicCard from "../../components/ecommerce/DemographicCard";
 import PageMeta from "../../components/common/PageMeta";
 import MapComponent from "../../components/Maps/MapComponent";
 import EmployeeChart from "../../components/ecommerce/EmployeeChart";
+import BirthdaysToday from "../../components/ecommerce/BirthdayCard";
+import Customers from "../../components/ecommerce/Customers";
+import JobApplicationCard from "../../components/ecommerce/JobApplicationCard";
 
 export default function Home() {
   return (
@@ -25,22 +27,27 @@ export default function Home() {
         
           
         <div className="grid col-span-12 xl:col-span-4">
-          <MonthlyTarget />
+          <Customers/>
          
-          <EmployeeChart/>
-        </div>
-
-        <div className="col-span-12">
         
         </div>
-
-        <div className="col-span-12 xl:col-span-5">
-          <DemographicCard />
+         
+        <div className="col-span-12  xl:col-span-4">
+             <EmployeeChart/>
         </div>
 
-        <div className="col-span-12 xl:col-span-7">
-          <RecentOrders />
+        <div className="col-span-12 xl:col-span-4">
+          <BirthdaysToday/>
         </div>
+
+        <div className="col-span-12 xl:col-span-8 ">
+          <EmployeeStatus />
+        </div>
+           
+             <div className="col-span-12 xl:col-span-4">
+          <JobApplicationCard/>
+        </div>
+
 
         <div className="col-span-12">
           <MapComponent />

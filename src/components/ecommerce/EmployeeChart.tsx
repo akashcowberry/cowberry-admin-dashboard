@@ -32,7 +32,7 @@ export default function EmployeeChart() {
         </ResponsiveContainer>
       </div>
 
-      <div className="w-full sm:w-1/2 flex flex-col justify-center space-y-3">
+      <div className="w-full sm:w-1/2 flex flex-col justify-center ">
         {data.map((item, index) => (
           <div key={index} className="flex items-center space-x-4">
             <div className="text-xl font-bold text-gray-900 w-10">
